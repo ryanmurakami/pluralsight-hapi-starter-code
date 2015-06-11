@@ -1,0 +1,85 @@
+<html>
+<head>
+	<title>hapi Greetings</title>
+	<link rel="stylesheet" href="/assets/css/stylesheet.css" />
+</head>
+<body>
+	<header>
+		<h2>My Cards</h2>
+		<a href="cards/new" class="btn btn-default" role="button">
+			Make New Card
+		</a>
+	</header>
+	<ul class="cards">
+		<li class="card">
+			<div class="recipient">To: Jim Bob
+			</div>
+			<img src="/assets/images/cards/xmas_card.jpg">
+			<div class="actions">
+				<a href="cards/12345" class="btn btn-default" role="button">
+					Preview
+				</a>
+				<a href="cards/12345" class="btn btn-default delete-button" role="button">
+					Delete
+				</a>
+				<a href="cards/12345/send" class="btn btn-default" role="button">
+					Send
+				</a>
+			</div>
+		</li>
+		<li class="card">
+			<div class="recipient">To: Jenny Sue
+			</div>
+			<img src="/assets/images/cards/halloween_card.jpg">
+			<div class="actions">
+				<a href="cards/12346" class="btn btn-default" role="button">
+					Preview
+				</a>
+				<a href="cards/12346" class="btn btn-default delete-button" role="button">
+					Delete
+				</a>
+				<a href="cards/12346/send" class="btn btn-default" role="button">
+					Send
+				</a>
+			</div>
+		</li>
+		<li class="card">
+			<div class="recipient">To: Sammy Paige
+			</div>
+			<img src="/assets/images/cards/party_card.jpg">
+			<div class="actions">
+				<a href="cards/12347" class="btn btn-default" role="button">
+					Preview
+				</a>
+				<a href="cards/12347" class="btn btn-default delete-button" role="button">
+					Delete
+				</a>
+				<a href="cards/12347/send" class="btn btn-default" role="button">
+					Send
+				</a>
+			</div>
+		</li>
+	</ul>
+	<script>
+		var deleteButtons = document.getElementsByClassName('delete-button'),
+			deleteClickHandler = function(e) {
+				e.preventDefault();
+				e.stopPropagation();
+				var request = new XMLHttpRequest();
+				request.open('DELETE', e.target.href, true);
+				request.onload = function() {
+					if (request.status >= 200 && request.status < 400) {
+						location.reload();
+					} else {
+					}
+				};
+				request.send();
+			},
+			counter = 0;
+		while(counter < deleteButtons.length) {
+			deleteButtons.item(counter).addEventListener('click', deleteClickHandler);
+			counter++;
+		}
+	</script>
+</body>
+</html>

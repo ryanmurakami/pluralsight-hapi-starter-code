@@ -1,0 +1,161 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.title {
+	font-size: 300%;
+	margin: 40px 0 15px;
+	text-align: center;
+}
+
+.sub-title {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.button {
+	margin: 50px auto;
+	position: relative;
+	width: 200px;
+}
+
+button > a {
+	color: white;
+}
+
+footer {
+	bottom: 0;
+	position: fixed;
+	margin-bottom: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.new_card {
+	text-align: center;
+	margin: 100px 0 15px;
+}
+
+.new_card > .new_title {
+	font-size: 200%;
+	margin-bottom: 20px;
+}
+
+form > input{
+	font-size: 14px;
+	line-height: 1.42857143;
+	height: 34px;
+	padding: 6px 12px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+}
+
+.delete-card {
+	margin-top: 10px;
+}
+
+form {
+	max-width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-group {
+	flex-grow: 1;
+	padding-left: 10px;
+	text-align: left;
+}
+
+.form-row {
+	margin-left: -10px;
+}
+
+.cards,
+.card-images,
+.form-row {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: flex-start;
+}
+
+.cards {
+	padding-left: 25px;
+}
+
+.card-images > label {
+	margin-right: 30px;
+}
+.card-images > label > input {
+	margin-right: 10px;
+}
+.cards > li {
+	box-sizing: border-box;
+	border-radius: 7px;
+	border: 1px solid #ddd;
+	margin-right: 25px;
+	padding: 15px;
+}
+.cards > li > img {
+	max-width: 250px;
+}
+
+.user,
+.login {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	width: 160px;
+}
+
+.user > img {
+	border-radius: 50%;
+	float: left;
+}
+
+.user .welcome {
+	float: left;
+	text-align: center;
+}
+
+.user .logout {
+	text-align: center;
+}
+
+.user > .text {
+	float: left;
+	margin: 20px 0 0 15px;
+}
+
+.promo {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.card .recipient {
+	margin-bottom: 10px;
+}
+
+.card > .actions {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+.card > .actions > a {
+	margin-right: 10px;
+}
+
+header {
+	height: 110px;
+	margin-left: 25px;
+}
+
+.main-card-image {
+	text-align: center;
+}
+
+.main-card-image > img {
+	max-width: 85%;
+}

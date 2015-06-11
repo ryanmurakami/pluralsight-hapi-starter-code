@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>hapi Greetings</title>
+	<link rel="stylesheet" href="/assets/css/stylesheet.css" />
+</head>
+<body>
+	<div class="new_card">
+		<div class="new_title">New Card</div>
+		<form action="new" method="POST">
+			<div class="form-row">
+				<div class="form-group">
+					<label for="recipientField">Recipient's Name</label>
+					<input type="text" id="recipientField" class="form-control" name="name" placeholder="Recipient's Name">
+				</div>
+				<div class="form-group">
+					<label for="recipientEmail">Recipient's Email</label>
+					<input type="text" id="recipientEmail" class="form-control" name="recipient_email" placeholder="Recipient's Email">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group">
+					<label for="senderField">Sender's Name</label>
+					<input type="text" id="senderField" class="form-control" name="sender_name" placeholder="Sender's Name">
+				</div>
+				<div class="form-group">
+					<label for="senderEmail">Sender's Email</label>
+					<input type="text" id="senderEmail" class="form-control" name="sender_email" placeholder="Sender's Email">
+				</div>
+			</div>
+			<h3>Select Card:</h3>
+			<div class="card-images">
+				<label>
+					<input type="radio" name="card_image" value="easter_card.jpg">
+					<img src="/assets/images/cards/easter_card.jpg">
+				</label>
+				<label>
+					<input type="radio" name="card_image" value="halloween_card.jpg">
+					<img src="/assets/images/cards/halloween_card.jpg">
+				</label>
+				<label>
+					<input type="radio" name="card_image" value="party_card.jpg">
+					<img src="/assets/images/cards/party_card.jpg">
+				</label>
+				<label>
+					<input type="radio" name="card_image" value="star_card.jpg">
+					<img src="/assets/images/cards/star_card.jpg">
+				</label>
+				<label>
+					<input type="radio" name="card_image" value="xmas_card.jpg">
+					<img src="/assets/images/cards/xmas_card.jpg">
+				</label>
+			</div>
+			<input type="submit" value="Create">
+		</form>
+	</div>
+</body>
+</html>
