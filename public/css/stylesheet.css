@@ -279,7 +279,9 @@ input[type=checkbox], input[type=radio] {
 .cards > li > img {
 	max-width: 250px;
 }
-
+.card-images > label > img {
+	max-width: 250px;
+}
 .user,
 .login {
 	position: absolute;
